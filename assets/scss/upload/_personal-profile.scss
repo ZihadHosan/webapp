@@ -1,0 +1,93 @@
+.upload-area {
+    margin: 15px 0;
+    .personal-profile {
+        background-color: $section-bg;
+        padding: 30px 20px;
+        border-radius: 10px;
+        .profile-photo img {
+            max-width: 120px;
+            border-radius: 6px;
+        }
+        .profile-ststus {
+            @include verCenter-parent;
+            text-align: left;
+            .col-md-6 {
+                @include verCenter-child;
+            }
+            .profile-valu h6 {
+                font-size: 16px;
+                font-weight: 600;
+                padding: 4px 0;
+            }
+        }
+        .profile-name {
+            padding: 9px 0;
+            h5 {
+                font-size: 18px;
+                font-weight: 600;
+            }
+            p {
+                font-size: 12px;
+                font-weight: 300;
+            }
+            a.profile-btn {
+                font-size: 12px;
+                font-weight: 300;
+                background-color: #5B5B5B;
+                -webkit-transition: all .3s;
+                transition: all .3s;
+                text-align: center;
+                padding: 5px;
+                width: 112px;
+                display: inline-block;
+                border-radius: 20px;
+                margin: 15px 10px 15px 0;
+            }
+            a.profile-btn:hover {
+                background-color: $secondary-color;
+                color: $primary-color;
+            }
+        }
+        .my-video img {
+            margin: 10px 0;
+            border-radius: 6px;
+        }
+    }
+    .video-upload {
+        background-color: $section-bg;
+        border-radius: 10px;
+        @include verCenter-parent;
+        height: 100%;
+        position: relative;
+        .upload-icon {
+            @include verCenter-child;
+        }
+        span.icon-upload {
+            font-size: 100px;
+            color: $icon-color;
+        }
+        h4 {
+            font-size: 30px;
+            font-weight: 600;
+            color: $icon-color;
+        }
+        .video-post {
+            position: absolute;
+            right: 20px;
+            bottom: 35px;
+            a.post-btn {
+                font-size: 16px;
+                color: #000;
+                background-color: $primary-color;
+                padding: 18px 37px;
+                font-weight: 600;
+                border-radius: 10px;
+            }
+            a.post-btn:hover {
+                background-color: $secondary-color;
+                color: $primary-color;
+            }
+        }
+    }
+
+}
